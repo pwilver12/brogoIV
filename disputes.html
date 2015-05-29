@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=yes">
+	<title>Brogo IV &ndash; Disputes</title>
+	<link rel="stylesheet" href="css/brogo.css" media="screen" type="text/css" />
+</head>
+
+<body>
+	
+	<!-- start header -->
+
+	<div id="header-container">
+		<div class="header">
+			<div class="header-nav pc cf">
+				<h1>Brogo IV</h1>
+				<div class="mobile-nav">
+					<div class="burger-nav"></div>
+				</div>
+				<ul>
+					<li>
+						<a id="index" href="http://fellbroship-brogo4.bitballoon.com/">Home</a>
+					</li>
+					<li>
+						<a id="bros" href="http://fellbroship-brogo4.bitballoon.com/">The Bros</a>
+					</li>
+					<li>
+						<a href="">Games</a>
+					</li>
+					<li>
+						<a href="disputes.html">Disputes</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- end header -->
+	<!-- start body -->
+
+	<div id="body-container" class="disputes">
+		<div id="disputes-body">
+			<h1>&ndash; Settle a Dispute &ndash;</h1>
+			<div id="disputes-main">
+				<div class="team-choices">
+					<h2>Challenger:</h2>
+					<div class="team-drop-down">
+						<div class="arrowdown"></div>
+						<select id="cha">
+							<option value="0" disabled selected>Choose challenging team</option>
+							<option value="1">Frodo / Sam</option>
+							<option value="2">Pippin / Merry</option>
+							<option value="3">Legolas / Gimli</option>
+							<option value="4">Gollum / Shelob</option>
+							<option value="5">Saruman / Grima</option>
+						</select>
+					</div>
+
+					<h2>Opponent:</h2>
+					<div class="team-drop-down">
+						<div class="arrowdown"></div>
+						<select id="opp">
+							<option value="0" disabled selected>Choose defending team</option>
+							<option value="1">Frodo / Sam</option>
+							<option value="2">Pippin / Merry</option>
+							<option value="3">Legolas / Gimli</option>
+							<option value="4">Gollum / Shelob</option>
+							<option value="5">Saruman / Grima</option>
+						</select>
+					</div>
+					<button id="decision">Decide Your Fate</button>
+				</div>
+				
+				<div class="results">
+					<div class="results-table">
+						<h2>Results</h2>
+						<div class="results-img cf">
+							<div class="score_cell challenger">
+								<img src="images/disputes/rock.png">
+								<h4>&nbsp;</h4>
+							</div>
+
+							<div class="score_cell opponent">
+								<img src="images/disputes/paper.png">
+								<h4>&nbsp;</h4>
+							</div>
+						</div>
+						<button id="again">Play Again</button>
+					</div>
+					<p id="verdict">
+						&nbsp;
+					</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="js/jquery-1.11.2.min.js"></script>
+	<script src="js/brogo.js"></script>
+
+</body>
+</html>
